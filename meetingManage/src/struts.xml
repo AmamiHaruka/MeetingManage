@@ -2,6 +2,18 @@
 <!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
 <struts>
 	<package name="welcome" extends="struts-default" namespace="/welcome">
-		<action name="text" class="com.atm.action.WelcomeAction" method="welcome"></action>
+		<action name="login" class="com.atm.action.WelcomeAction" method="welcome">
+			<result>/index.jsp</result>
+		</action>
+		<action name="toIndex" class="com.atm.action.WelcomeAction" method="toIndex">
+			<result>/index.jsp</result>
+		</action>
+	</package>
+	<package name="personManage" extends="struts-default" namespace="/person">
+		<action name="addPerson" class="com.atm.action.PersonAction" method="addPerson"></action>
+		<action name="modifyPerson" class="com.atm.action.PersonAction" method="modifyPerson"></action>
+		<action name="getPerson" class="com.atm.action.PersonAction" method="getPerson"></action>
+		<action name="deletePerson" class="com.atm.action.PersonAction" method="deletePerson"></action>
+		<action name="searchPerson" class="com.atm.action.PersonAction" method="searchPerson"></action>
 	</package>
 </struts>    

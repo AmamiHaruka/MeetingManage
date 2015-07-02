@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+
+<!-- 定义事务管理器（声明式的事务） -->
+ 
+     <bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+ 
+        <property name="sessionFactory" ref="sessionFactory" />
+ 
+    </bean>
+ 
+ 
+
+
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="configLocation"
+			value="classpath:hibernate.cfg.xml">
+		</property>
+	</bean>
+	
+	<bean id="departmentDao" class="com.atm.dao.DepartmentDao"
+		abstract="false" lazy-init="default" autowire="default">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+	
+	
+	<bean id="documentDao" class="com.atm.dao.DocumentDao" abstract="false"
+		lazy-init="default" autowire="default">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+			</property>
+	</bean>
+	
+	
+	<bean id="documentspaceDao" class="com.atm.dao.DocumentspaceDao"
+		abstract="false" lazy-init="default" autowire="default">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+			</property>
+	</bean>
+	<bean id="meetingmanagerDao" class="com.atm.dao.MeetingmanagerDao"
+		abstract="false" lazy-init="default" autowire="default">
+			<property name="sessionFactory">
+			<ref local="sessionFactory" />
+			</property>
+	</bean>
+	<bean id="meetingmilestoneDao" class="com.atm.dao.MeetingmilestoneDao"
+		abstract="false" lazy-init="default" autowire="default">
+			<property name="sessionFactory">
+			<ref local="sessionFactory" />
+			</property>
+	</bean>
+	<bean id="meetingroomDao" class="com.atm.dao.MeetingroomDao"
+		abstract="false" lazy-init="default" autowire="default">
+			<property name="sessionFactory">
+			<ref local="sessionFactory" />
+			</property>
+	</bean>
+	<bean id="noticeDao" class="com.atm.dao.NoticeDao" abstract="false"
+		lazy-init="default" autowire="default">
+			<property name="sessionFactory">
+			<ref local="sessionFactory" />
+			</property>
+	</bean>
+	<bean id="noticeresponse" class="com.atm.dao.NoticeresponseDao"
+		abstract="false" lazy-init="default" autowire="default">
+			<property name="sessionFactory">
+			<ref local="sessionFactory" />
+			</property>
+	</bean>
+	<bean id="personDao" class="com.atm.dao.PersonDao" abstract="false"
+		lazy-init="default" autowire="default">
+			<property name="sessionFactory">
+			<ref local="sessionFactory" />
+			</property>
+	</bean>
+	<bean id="roomstateDao" class="com.atm.dao.RoomstateDao"
+		abstract="false" lazy-init="default" autowire="default">
+			<property name="sessionFactory">
+			<ref local="sessionFactory" />
+			</property>
+	</bean></beans>

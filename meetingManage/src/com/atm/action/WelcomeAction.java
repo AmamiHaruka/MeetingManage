@@ -14,11 +14,21 @@ import net.sf.json.JSONObject;
 import org.apache.struts2.ServletActionContext;
 import org.hibernate.Session;
 
-import com.atm.util.HibernateSessionFactory;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class WelcomeAction extends ActionSupport {
-	public String welcome(){
+	public String welcome() throws IOException{
+		ServletResponse response=ServletActionContext.getResponse();
+		//BufferedReader br=new BufferedReader(new InputStreamReader(request.getInputStream()));
+		PrintWriter out=response.getWriter();
+		JSONObject j=new JSONObject();
+		j.put("name", "dps");
+		j.put("age",10);
+		out.print(j);
+		return null;
 	
+	}
+	public String toIndex(){
+		return SUCCESS;
 	}
 }
