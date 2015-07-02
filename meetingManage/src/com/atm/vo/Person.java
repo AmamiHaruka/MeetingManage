@@ -1,7 +1,5 @@
 package com.atm.vo;
 
-
-
 /**
  * Person entity. @author MyEclipse Persistence Tools
  */

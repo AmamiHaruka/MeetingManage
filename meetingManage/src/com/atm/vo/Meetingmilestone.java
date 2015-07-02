@@ -4,7 +4,7 @@ package com.atm.vo;
  * Meetingmilestone entity. @author MyEclipse Persistence Tools
  */
 
-public class Milestone implements java.io.Serializable {
+public class Meetingmilestone implements java.io.Serializable {
 
 	// Fields
 
@@ -18,11 +18,11 @@ public class Milestone implements java.io.Serializable {
 	// Constructors
 
 	/** default constructor */
-	public Milestone() {
+	public Meetingmilestone() {
 	}
 
 	/** full constructor */
-	public Milestone(Integer milestoneId, Integer milestoneMeetingId,
+	public Meetingmilestone(Integer milestoneId, Integer milestoneMeetingId,
 			String milestoneTarget, String milestoneState,
 			String milestoneResponser, Integer milestoneProcess) {
 		this.milestoneId = milestoneId;

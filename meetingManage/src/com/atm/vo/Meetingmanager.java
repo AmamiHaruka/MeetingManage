@@ -4,7 +4,7 @@ package com.atm.vo;
  * Meetingmanager entity. @author MyEclipse Persistence Tools
  */
 
-public class Meeting implements java.io.Serializable {
+public class Meetingmanager implements java.io.Serializable {
 
 	// Fields
 
@@ -20,11 +20,11 @@ public class Meeting implements java.io.Serializable {
 	// Constructors
 
 	/** default constructor */
-	public Meeting() {
+	public Meetingmanager() {
 	}
 
 	/** full constructor */
-	public Meeting(Integer id, String reserveMan, String meetingName,
+	public Meetingmanager(Integer id, String reserveMan, String meetingName,
 			String meetingResponser, Integer meetingPnumber,
 			String meetingBeginTime, String meetingEndTime, String meetingDate) {
 		this.id = id;

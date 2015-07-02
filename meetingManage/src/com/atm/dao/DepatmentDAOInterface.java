@@ -1,4 +1,4 @@
-package com.atm.datInter;
+package com.atm.dao;
 
 import java.util.List;
 
