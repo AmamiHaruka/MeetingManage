@@ -19,6 +19,12 @@
 			<attribute name="owner.project.facets" value="jst.web.jstl"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="con" path="com.genuitec.runtime.library/com.genuitec.struts_2.1">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="WEB-INF/lib"/>
+			<attribute name="owner.project.facets" value="web.struts2"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="con" path="com.genuitec.runtime.library/com.genuitec.hibernate_3.1">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.dependency" value="WEB-INF/lib"/>
@@ -31,12 +37,14 @@
 			<attribute name="owner.project.facets" value="me.spring"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="com.genuitec.runtime.library/com.genuitec.struts_2.1">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.dependency" value="WEB-INF/lib"/>
-			<attribute name="owner.project.facets" value="web.struts2"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/攀松/Workspaces/MyEclipse Professional 2014/struts2/WebRoot/WEB-INF/lib/mysql-connector-java-5.0.7-bin.jar"/>
+	<classpathentry kind="lib" path="C:/Users/攀松/Workspaces/MyEclipse Professional 2014/meeting/WebRoot/WEB-INF/lib/mysql-connector-java-5.1.26-bin.jar"/>
+	<classpathentry kind="lib" path="C:/myworkspace/meeting/WebRoot/WEB-INF/lib/commons-beanutils-1.7.0.jar"/>
+	<classpathentry kind="lib" path="C:/myworkspace/meeting/WebRoot/WEB-INF/lib/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/myworkspace/meeting/WebRoot/WEB-INF/lib/commons-lang-2.3.jar"/>
+	<classpathentry kind="lib" path="C:/myworkspace/meeting/WebRoot/WEB-INF/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/myworkspace/meeting/WebRoot/WEB-INF/lib/ezmorph-1.0.3.jar"/>
+	<classpathentry kind="lib" path="C:/myworkspace/meeting/WebRoot/WEB-INF/lib/json-lib-2.2.3-jdk15.jar"/>
+	<classpathentry kind="lib" path="C:/myworkspace/meeting/WebRoot/WEB-INF/lib/mysql-connector-java-5.0.7-bin.jar"/>
+	<classpathentry kind="lib" path="C:/myworkspace/meeting/WebRoot/WEB-INF/lib/mysql-connector-java-5.1.26-bin.jar"/>
 	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
 </classpath>

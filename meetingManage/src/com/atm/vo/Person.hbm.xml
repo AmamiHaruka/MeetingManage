@@ -38,7 +38,7 @@
             <column name="Salary" />
         </property>
         <property name="department" type="java.lang.String">
-            <column name="Department" length="45" not-null="true" />
+            <column name="Department" length="46" not-null="true" />
         </property>
         <property name="gender" type="java.lang.String">
             <column name="Gender" length="8" not-null="true" />
